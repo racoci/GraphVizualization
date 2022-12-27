@@ -1,0 +1,57 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+}
+
+#input-container textarea {
+    width: 300px;
+    height: 200px;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    white-space: nowrap;
+    overflow: hidden;
+    resize: none;
+    border: none;
+    background-color: transparent;
+}
+
+#input-container textarea:focus {
+    outline: none;
+}
+
+#output {
+    width: 800px;
+    height: 600px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+button:active {
+    background-color: #ddd;
+}
+
+#input-container.hidden {
+    display: none;
+}
